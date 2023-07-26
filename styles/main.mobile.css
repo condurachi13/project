@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+}
+
+@media (width < 620px) {
+  body {
+    margin: 0px;
+  }
+  .main-section {
+    background-image: url(/images/mobile/image-header.jpg);
+    background-size: 100%;
+    color: white;
+    height: 600px;
+  }
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 24px;
+    border-bottom: 1px solid #979797;
+  }
+  .main-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 123px 24px 110px 24px;
+  }
+  .main-product .new-product {
+    letter-spacing: 10px;
+  }
+  .main-product .headphone-h1 {
+    margin-top: 0;
+    font-size: 36px;
+    text-align: center;
+  }
+  .main-product .product-description {
+    text-align: center;
+    width: 75%;
+    margin-top: -12px;
+  }
+  .button-see-product {
+    padding: 15px 30px;
+    color: white;
+    background-color: #D87D4A;
+    border: none;
+    margin-top: 12px;
+  }
+  .button-see-product:hover {
+    background-color: #FBAF85;
+  }
+  .second-main-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .second-main-section .presentation-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-main-section .presentation-images .headphone {
+    border-radius: 40%;
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.027);
+  }
+  .second-main-section .presentation-images .go-shop .shop {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .second-main-section .presentation-images .go-shop .shop:hover {
+    color: #D87D4A;
+  }
+  .second-main-section .presentation-images .go-shop .greather-than {
+    color: #D87D4A;
+  }
+  .zx9-speaker {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #D87D4A;
+    margin: 24px;
+    border-radius: 10px;
+    color: white;
+    justify-content: space-evenly;
+    padding: 50px 20px;
+  }
+  .zx9-speaker .main-title {
+    font-size: 36px;
+  }
+  .zx9-speaker .black-button {
+    background-color: #000000;
+  }
+  .zx7-speaker .opacity-button {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    color: #000000;
+  }
+  .zx7-speaker .opacity-button:hover {
+    background-color: #000000;
+    color: white;
+  }
+}/*# sourceMappingURL=main.mobile.css.map */

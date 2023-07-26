@@ -51,6 +51,12 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .second-main-section .grey-bg {
+    margin: 42px 24px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, white 0%, white 25%, #F1F1F1 25%, #F1F1F1 100%);
+    height: 217px;
+  }
   .second-main-section .presentation-images {
     display: flex;
     flex-direction: column;
@@ -58,8 +64,6 @@ body {
   }
   .second-main-section .presentation-images .headphone {
     border-radius: 40%;
-    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.027);
   }
   .second-main-section .presentation-images .go-shop .shop {
     border: none;
@@ -90,10 +94,23 @@ body {
   .zx9-speaker .black-button {
     background-color: #000000;
   }
+  .zx7-speaker {
+    display: flex;
+    height: 320px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0px 24px;
+    background-image: url(/images/mobile/zx7-speaker-bg.png);
+  }
+  .zx7-speaker h1 {
+    margin-left: 24px;
+  }
   .zx7-speaker .opacity-button {
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0);
     color: #000000;
+    margin-left: 24px;
   }
   .zx7-speaker .opacity-button:hover {
     background-color: #000000;

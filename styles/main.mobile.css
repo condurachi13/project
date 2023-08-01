@@ -2,13 +2,64 @@ body {
   margin: 0;
 }
 
+.footer {
+  background-color: #101010;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 654px;
+  gap: 48px;
+  justify-content: space-evenly;
+}
+.footer .links-with-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 592px;
+}
+.footer .social-media-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer p {
+  margin: 24px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.best-audio-gear {
+  display: flex;
+  flex-direction: column;
+  margin: 120px 24px;
+  text-align: center;
+}
+.best-audio-gear .best-audio-bg {
+  background-image: url(/images/mobile/guy-with-headphones.png);
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+}
+.best-audio-gear .orange-h1-text {
+  color: #D87D4A;
+}
+
 @media (width < 620px) {
   body {
     margin: 0px;
   }
   .main-section {
     background-image: url(/images/mobile/image-header.jpg);
-    background-size: 100%;
+    background-size: cover;
     color: white;
     height: 600px;
   }
@@ -142,52 +193,4 @@ body {
   .yx1-earphones .yx1-see-product h1 {
     margin-left: 24px;
   }
-  .best-audio-gear {
-    display: flex;
-    flex-direction: column;
-    margin: 120px 24px;
-    text-align: center;
-  }
-  .best-audio-gear .best-audio-bg {
-    background-image: url(/images/mobile/guy-with-headphones.png);
-    height: 300px;
-    background-size: cover;
-    border-radius: 10px;
-  }
-  .best-audio-gear .orange-h1-text {
-    color: #D87D4A;
-  }
-  .footer {
-    background-color: #101010;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    height: 654px;
-    gap: 48px;
-    justify-content: space-evenly;
-  }
-  .footer .links-with-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 592px;
-  }
-  .footer .social-media-links {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-  }
-  .footer p {
-    margin: 24px;
-  }
-}
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.footer-links a {
-  text-decoration: none;
-  color: white;
 }/*# sourceMappingURL=main.mobile.css.map */

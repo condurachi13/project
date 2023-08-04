@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Audiophile</title>
+    <link rel="stylesheet" href="/styles/product-description.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -11,19 +12,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/styles/headphones.mobile.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
+    <title>Audiophile</title>
   </head>
   <body>
     <section class="header">
       <header class="mobile-header">
         <section class="main-header-audiophile">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars bars"></i>
           <svg
             width="143"
             height="25"
             viewBox="0 0 143 25"
-            fill="none"
+            fill="red"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g id="audiophile 2">
@@ -57,83 +57,120 @@
           </a>
         </section>
       </header>
-      <section class="main-title">
-        <h1 class="main-title-h1">HEADPHONES</h1>
+    </section>
+    <a class="go-back" href="headphones.html"> Go Back</a>
+    <section class="product-image">
+      <img
+        src="/images/headphones-mobile-tab/x99-mark1-headphones.png"
+        alt="black headphones"
+        class="headphones-image"
+      />
+
+      <img
+        src="images/headphones-mobile-tab/Oval-shadow.png"
+        alt="shadow"
+        class="shadow"
+      />
+    </section>
+    <h1 class="headphone-main-title">XX99 Mark I Headphones</h1>
+    <p class="new-product-description">
+      As the gold standard for headphones, the classic XX99 Mark I offers
+      detailed and accurate audio reproduction for audiophiles, mixing
+      engineers, and music aficionados alike in studios and on the go.
+    </p>
+    <p class="product-price">$ 1,750</p>
+    <section class="add-to-cart">
+      <section class="button-quantity">
+        <button class="plus-minus">-</button>
+        <input type="number" name="quantity" id="quantity" value="1" />
+        <button class="plus-minus">+</button>
+      </section>
+      <button type="button" class="button-see-product">ADD TO CART</button>
+    </section>
+    <h2 class="features">FEATURES</h2>
+    <section class="description-features">
+      <p>
+        As the headphones all others are measured against, the XX99 Mark I
+        demonstrates over five decades of audio expertise, redefining the
+        critical listening experience. This pair of closed-back headphones are
+        made of industrial, aerospace-grade materials to emphasize durability at
+        a relatively light weight of 11 oz. <br /><br />
+        From the handcrafted microfiber ear cushions to the robust metal
+        headband with inner damping element, the components work together to
+        deliver comfort and uncompromising sound. Its closed-back design
+        delivers up to 27 dB of passive noise cancellation, reducing resonance
+        by reflecting sound to a dedicated absorber. For connectivity, a
+        specially tuned cable is included with a balanced gold connector.
+      </p>
+    </section>
+    <section class="in-the-box">
+      <h2>IN THE BOX</h2>
+      <section class="items-inthebox">
+        <section class="section-inthebox">
+          <span class="number">1x</span>
+          <span>Headphone Unit</span>
+        </section>
+        <section class="section-inthebox">
+          <span class="number">2x</span>
+          <span>Replacement Earcups</span>
+        </section>
+        <section class="section-inthebox">
+          <span class="number">1x</span>
+          <span>User Manual</span>
+        </section>
+        <section class="section-inthebox">
+          <span class="number">1x</span>
+          <span>3.5mm 5m Audio Cable</span>
+        </section>
       </section>
     </section>
-    <section class="new-product">
-      <section class="product-image">
-        <img
-          src="/images/headphones-mobile-tab/xx99-headphones.png"
-          alt="black headphones"
-          class="headphones-image"
-        />
-
-        <img
-          src="images/headphones-mobile-tab/Oval-shadow.png"
-          alt="shadow"
-          class="shadow"
-        />
-      </section>
-      <section class="product-description">
-        <p class="new-product-title">NEW PRODUCT</p>
-        <h1 class="headphone-main-title">XX99 Mark II Headphones</h1>
-        <p class="new-product-description">
-          The new XX99 Mark II headphones is the pinnacle of pristine audio. It
-          redefines your premium headphone experience by reproducing the
-          balanced depth and precision of studio-quality sound.
-        </p>
-        <button type="button" class="button-see-product">SEE PRODUCT</button>
-      </section>
+    <section class="description-images">
+      <img src="/images/product-details/xx99 mark 1 stand.png" alt="" />
+      <img src="/images/product-details/xx99 mark 1 and shoe.png" alt="" />
+      <img src="/images/product-details/xx99 mark 1 akg.png" alt="" />
     </section>
-    <section class="product">
-      <section class="product-image">
-        <img
-          src="/images/headphones-mobile-tab/x99-mark1-headphones.png"
-          alt="black headphones"
-          class="headphones-image"
-        />
-
-        <img
-          src="images/headphones-mobile-tab/Oval-shadow.png"
-          alt="shadow"
-          class="shadow"
-        />
-      </section>
-      <section class="main-product-description">
-        <!-- <p class="product-title">NEW PRODUCT</p> -->
-        <h1 class="headphone-main-title">XX99 Mark I Headphones</h1>
-        <p class="product-description">
-          The new XX99 Mark II headphones is the pinnacle of pristine audio. It
-          redefines your premium headphone experience by reproducing the
-          balanced depth and precision of studio-quality sound.
-        </p>
-        <button type="button" class="button-see-product">SEE PRODUCT</button>
-      </section>
-    </section>
-    <section class="product">
-      <section class="product-image">
-        <img
-          src="/images/headphones-mobile-tab/xx59-headphones.png"
-          alt="black headphones"
-          class="headphones-image"
-        />
-
-        <img
-          src="images/headphones-mobile-tab/Oval-shadow.png"
-          alt="shadow"
-          class="shadow"
-        />
-      </section>
-      <section class="main-product-description">
-        <!-- <p class="product-title">NEW PRODUCT</p> -->
-        <h1 class="headphone-main-title">XX99 Mark I Headphones</h1>
-        <p class="product-description">
-          The new XX99 Mark II headphones is the pinnacle of pristine audio. It
-          redefines your premium headphone experience by reproducing the
-          balanced depth and precision of studio-quality sound.
-        </p>
-        <button type="button" class="button-see-product">SEE PRODUCT</button>
+    <section class="you-may-like">
+      <h2>YOU MAY ALSO LIKE</h2>
+      <section class="youmaylike-containers">
+        <section>
+          <section class="img-background">
+            <img
+              src="images/headphones-mobile-tab/xx99-headphones.png"
+              alt=""
+            />
+          </section>
+          <section class="title-and-see-product">
+            <h2>XX99 MARK II</h2>
+            <button type="button" class="button-see-product black-button">
+              SEE PRODUCT
+            </button>
+          </section>
+        </section>
+        <section>
+          <section class="img-background">
+            <img
+              src="images/headphones-mobile-tab/xx59-headphones.png"
+              alt=""
+            />
+          </section>
+          <section class="title-and-see-product">
+            <h2>XX59</h2>
+            <button type="button" class="button-see-product black-button">
+              SEE PRODUCT
+            </button>
+          </section>
+        </section>
+        <section>
+          <section class="img-background">
+            <img src="images/speakers-mobile-tab/zx9-speaker.png" alt="" />
+          </section>
+          <section class="title-and-see-product">
+            <h2>ZX9 SPEAKER</h2>
+            <button type="button" class="button-see-product black-button">
+              SEE PRODUCT
+            </button>
+          </section>
+        </section>
       </section>
     </section>
     <section class="main-nav-section">

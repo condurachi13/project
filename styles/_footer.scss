@@ -11,8 +11,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       height: 592px;
+      .orange-footer-line {
+        width: 101px;
+        height: 4px;
+        background-color: #d87d4a;
+      }
     }
     .social-media-links {
       display: flex;

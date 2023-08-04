@@ -1,15 +1,17 @@
-.best-audio-gear {
+@media (width < 620px) {
+  .best-audio-gear {
     display: flex;
     flex-direction: column;
     margin: 120px 24px;
     text-align: center;
     .best-audio-bg {
-        background-image: url(/images/mobile/guy-with-headphones.png);
-        height: 300px;
-        background-size: cover;
-        border-radius: 10px;
+      background-image: url(/images/mobile/guy-with-headphones.png);
+      height: 300px;
+      background-size: cover;
+      border-radius: 10px;
     }
     .orange-h1-text {
-        color: #D87D4A;
+      color: #d87d4a;
     }
+  }
 }

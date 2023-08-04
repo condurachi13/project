@@ -1,163 +1,119 @@
 @import "base";
 @import "footer";
 @import "best-audio-gear";
+@import "header";
+@import "products-list";
 @media (width < 620px) {
-    body {
-        margin: 0px;
+  body {
+    margin: 0px;
+  }
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/mobile/image-header.jpg);
+    background-color: #111111f6;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100%;
+  }
+  .main-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: calc(198px - 75px) 24px 110px 24px;
+    .new-product {
+      letter-spacing: 10px;
     }
+    .headphone-h1 {
+      margin-top: 0;
+      font-size: 36px;
+      text-align: center;
+    }
+    .product-description {
+      text-align: center;
+      width: 75%;
+      margin-top: calc(24px - 36px);
+    }
+  }
+  .button-see-product {
+    padding: 15px 30px;
+    color: white;
+    background-color: #d87d4a;
+    border: none;
+    margin-top: calc(28px - 16px);
+    &:hover {
+      background-color: #fbaf85;
+    }
+  }
 
+  .zx9-speaker {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #d87d4a;
+    margin: 24px;
+    border-radius: 10px;
+    color: white;
+    justify-content: space-evenly;
+    padding: 50px 20px;
+    .main-title {
+      font-size: 36px;
+    }
+    .black-button {
+      background-color: #000000;
+    }
+  }
+  .zx7-speaker {
+    display: flex;
+    height: 320px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 24px 24px;
+    background-image: url(/images/mobile/zx7-speaker-bg.png);
+    background-size: cover;
+    border-radius: 10px;
+    h1 {
+      margin-left: 24px;
+    }
+  }
+  .opacity-button {
+    border: 1px solid black;
+    background-color: #00000000;
+    color: #000000;
+    margin-left: 24px;
 
-    .main-section {
-        background-image: url(/images/mobile/image-header.jpg);
-        background-size: cover;
-        color: white;
-        height: 600px;
+    &:hover {
+      background-color: #000000;
+      color: white;
     }
-    .mobile-header {
-        display: flex;
-        justify-content: space-between;
-        padding: 25px 24px;
-        border-bottom: 1px solid #979797;
+  }
+  .yx1-earphones {
+    margin: 0px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .yx1-image {
+      background-image: url(/images/mobile/yx1-earphones-bg.png);
+      background-size: cover;
+      height: 200px;
+      border-radius: 10px;
     }
-    .main-product {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: calc(198px - 75px) 24px 110px 24px;
-        .new-product {
-            letter-spacing: 10px;
-        }
-        .headphone-h1 {
-            margin-top: 0;
-            font-size: 36px;
-            text-align: center;
-        }
-        .product-description {
-            text-align: center;
-            width: 75%;
-            margin-top: calc(24px - 36px);
-        }
-    }
-    .button-see-product {
-        padding: 15px 30px;
-        color: white;
-        background-color: #D87D4A;
-        border: none;
-        margin-top: calc(28px - 16px);
-        &:hover {
-            background-color: #FBAF85;
-        }
-    }
-    .second-main-section {
-        display: flex;
-        flex-direction: column;
-        .grey-bg {
-            margin: 42px 24px;
-            border-radius: 10px;
-            // DE VERIFICAT
-            background: linear-gradient( 
-                to bottom,
-                white 0%,
-                white 25%,
-                #F1F1F1 25%,
-                #F1F1F1 100%
-            );
-            // DE VERIFICAT
-            height: 217px;
-            }
-        .presentation-images {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-            .headphone {
-                border-radius: 40%;
-                // box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.637);
-            }
-            .go-shop {
-                .shop {
-                    border: none;
-                    background-color: rgba(255, 255, 255, 0);
-                    &:hover {
-                        color: #D87D4A;
-                    }
-                }
-                .greather-than {
-                    color: #D87D4A;
-                }
-            }
-        }
+    .yx1-see-product {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      border-radius: 10px;
 
-    }
-    .zx9-speaker {
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        background-color: #D87D4A;
-        margin: 24px;
-        border-radius: 10px;
-        color: white;
-        justify-content: space-evenly;
-        padding: 50px 20px;
-        .main-title {
-            font-size: 36px;
-        }
-        .black-button {
-            background-color: #000000;
-        }
-    }
-    .zx7-speaker {
-        display: flex;
-        height: 320px;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        margin: 24px 24px;
-        background-image: url(/images/mobile/zx7-speaker-bg.png);
-        background-size: cover;
-        border-radius: 10px;
-        h1 {
-            margin-left: 24px;
-        }
-
-        
-    }
-    .opacity-button {
-        border: 1px solid black;
-        background-color: #00000000;
-        color: #000000;
+      h1 {
         margin-left: 24px;
-
-        &:hover {
-            background-color: #000000;
-            color: white;
-        }
+      }
+      background-color: #f1f1f1;
+      height: 200px;
     }
-    .yx1-earphones {
-        margin: 0px 24px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        .yx1-image {
-            background-image: url(/images/mobile/yx1-earphones-bg.png);
-            background-size: cover;
-            height: 200px;
-            border-radius: 10px;
-        }
-        .yx1-see-product {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-            border-radius: 10px;
-
-            h1 {
-                margin-left: 24px;
-            }
-            background-color: #F1F1F1;
-            height: 200px;
-        }
-    }
+  }
 }

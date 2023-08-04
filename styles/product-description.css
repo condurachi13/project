@@ -3,12 +3,120 @@ body {
 }
 
 @media (width < 620px) {
+  .footer {
+    background-color: #101010;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 654px;
+    gap: 48px;
+    justify-content: space-evenly;
+  }
+  .footer .links-with-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 592px;
+  }
+  .footer .social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  .footer p {
+    margin: 24px;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer-links a {
+    text-decoration: none;
+    color: white;
+  }
+}
+@media (width < 620px) {
+  .best-audio-gear {
+    display: flex;
+    flex-direction: column;
+    margin: 120px 24px;
+    text-align: center;
+  }
+  .best-audio-gear .best-audio-bg {
+    background-image: url(/images/mobile/guy-with-headphones.png);
+    height: 300px;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .best-audio-gear .orange-h1-text {
+    color: #d87d4a;
+  }
+}
+@media (width < 620px) {
+  .main-nav-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-nav-section .grey-bg {
+    margin: 42px 24px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, white 0%, white 25%, #f1f1f1 25%, #f1f1f1 100%);
+    height: 217px;
+  }
+  .main-nav-section .presentation-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nav-section .presentation-images .headphone {
+    border-radius: 40%;
+  }
+  .main-nav-section .presentation-images .go-shop .shop {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .main-nav-section .presentation-images .go-shop .shop:hover {
+    color: #d87d4a;
+  }
+  .main-nav-section .presentation-images .go-shop .greather-than {
+    color: #d87d4a;
+  }
+}
+@media (width < 620px) {
+  .header {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.03);
+    padding: 25px 0px;
+  }
+  .mobile-header .fa-bars {
+    color: white;
+  }
+}
+@media (width < 620px) {
   .header {
     width: 100%;
     height: 90px;
     background-color: #000000;
     display: flex;
     flex-direction: column;
+  }
+  .go-back {
+    display: block;
+    width: 57px;
+    height: 25px;
+    text-decoration: none;
+    margin: 16px 24px;
   }
   .mobile-header {
     width: 100%;
@@ -30,8 +138,9 @@ body {
     flex-direction: column;
     background-color: #f1f1f1;
     border-radius: 10px;
-    width: 327px;
+    width: 90%;
     height: 327px;
+    margin: 0px 24px;
     justify-content: center;
     align-items: center;
   }
@@ -44,6 +153,16 @@ body {
   .new-product-title {
     letter-spacing: 10px;
     color: #d87d4a;
+    margin: 32px 24px 24px;
+  }
+  .headphone-main-title {
+    margin: 24px;
+  }
+  .new-product-description {
+    margin: 24px;
+  }
+  .product-price {
+    margin: 24px 0px 31px 24px;
   }
   .button-see-product {
     padding: 15px 30px;
@@ -57,6 +176,7 @@ body {
   .add-to-cart {
     display: flex;
     align-items: center;
+    margin: 31px 55px 88px 24px;
   }
   .add-to-cart .button-quantity {
     display: flex;
@@ -70,18 +190,69 @@ body {
   .add-to-cart .button-quantity #quantity {
     width: 18px;
   }
+  .features {
+    margin: 0px 24px 24px 24px;
+  }
+  .description-features {
+    margin: 0px 24px 88px 24px;
+  }
+  .description-features p {
+    margin: 0px;
+  }
   .in-the-box {
     display: flex;
     flex-direction: column;
   }
+  .in-the-box h2 {
+    margin: 0px 24px 24px;
+  }
   .in-the-box .items-inthebox {
     display: flex;
     flex-direction: column;
+  }
+  .in-the-box .items-inthebox .section-inthebox {
+    margin: 0px 24px 8px 24px;
   }
   .in-the-box .items-inthebox .number {
     color: #d87d4a;
     font-weight: bold;
     font-size: 15px;
     padding-right: 20px;
+  }
+  .description-images {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 24px 120px 24px;
+    gap: 20px;
+  }
+  .you-may-like {
+    margin: 0px 24px 78px 24px;
+  }
+  .you-may-like h2 {
+    text-align: center;
+  }
+  .you-may-like .youmaylike-containers {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+  .you-may-like .img-background {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .you-may-like .img-background img {
+    width: 73px;
+  }
+  .title-and-see-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }/*# sourceMappingURL=product-description.css.map */

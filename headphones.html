@@ -13,12 +13,15 @@
     />
     <link rel="stylesheet" href="/styles/headphones.mobile.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
+    <script src="/js/menu.js"></script>
   </head>
-  <body>
+  <body id="body">
     <section class="header">
       <header class="mobile-header">
         <section class="main-header-audiophile">
-          <i class="fa-solid fa-bars"></i>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars bars"></i>
+          </a>
           <svg
             width="143"
             height="25"
@@ -59,6 +62,47 @@
       </header>
       <section class="main-title">
         <h1 class="main-title-h1">HEADPHONES</h1>
+      </section>
+    </section>
+    <section class="main-nav-section" id="menu">
+      <section class="presentation-images grey-bg">
+        <img
+          class="headphone"
+          src="/images/mobile/headphones.png"
+          alt="headphones"
+        />
+        <p>HEADPHONES</p>
+        <section class="go-shop">
+          <button type="button" class="shop">
+            SHOP <i class="fa-solid fa-greater-than greather-than"></i>
+          </button>
+        </section>
+      </section>
+      <section class="presentation-images grey-bg">
+        <img
+          class="speakers"
+          src="/images/mobile/speakers.png"
+          alt="headphones"
+        />
+        <p>SPEAKERS</p>
+        <section class="go-shop">
+          <button type="button" class="shop">
+            SHOP <i class="fa-solid fa-greater-than greather-than"></i>
+          </button>
+        </section>
+      </section>
+      <section class="presentation-images grey-bg">
+        <img
+          class="earphones"
+          src="/images/mobile/earphones.png"
+          alt="headphones"
+        />
+        <p>EARPHONES</p>
+        <section class="go-shop">
+          <button type="button" class="shop">
+            SHOP <i class="fa-solid fa-greater-than greather-than"></i>
+          </button>
+        </section>
       </section>
     </section>
     <section class="new-product">

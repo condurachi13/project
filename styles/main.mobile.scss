@@ -3,6 +3,7 @@
 @import "best-audio-gear";
 @import "header";
 @import "products-list";
+@import "menu";
 @media (width < 620px) {
   body {
     margin: 0px;
@@ -16,6 +17,7 @@
     background-repeat: no-repeat;
     color: white;
     height: 100%;
+    margin-bottom: 42px;
   }
   .main-product {
     display: flex;

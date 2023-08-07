@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Audiophile</title>
+    <script src="/js/menu.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,10 +15,12 @@
     <link rel="stylesheet" href="/styles/main.mobile.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
   </head>
-  <body>
+  <body id="body">
     <section class="main-section">
       <header class="mobile-header">
-        <i class="fa-solid fa-bars nav"></i>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa-solid fa-bars bars nav"></i>
+        </a>
         <svg
           width="143"
           height="25"
@@ -55,6 +58,47 @@
           </svg>
         </a>
       </header>
+      <section class="main-nav-section" id="menu">
+        <section class="presentation-images grey-bg">
+          <img
+            class="headphone"
+            src="/images/mobile/headphones.png"
+            alt="headphones"
+          />
+          <p>HEADPHONES</p>
+          <section class="go-shop">
+            <button type="button" class="shop">
+              SHOP <i class="fa-solid fa-greater-than greather-than"></i>
+            </button>
+          </section>
+        </section>
+        <section class="presentation-images grey-bg">
+          <img
+            class="speakers"
+            src="/images/mobile/speakers.png"
+            alt="headphones"
+          />
+          <p>SPEAKERS</p>
+          <section class="go-shop">
+            <button type="button" class="shop">
+              SHOP <i class="fa-solid fa-greater-than greather-than"></i>
+            </button>
+          </section>
+        </section>
+        <section class="presentation-images grey-bg">
+          <img
+            class="earphones"
+            src="/images/mobile/earphones.png"
+            alt="headphones"
+          />
+          <p>EARPHONES</p>
+          <section class="go-shop">
+            <button type="button" class="shop">
+              SHOP <i class="fa-solid fa-greater-than greather-than"></i>
+            </button>
+          </section>
+        </section>
+      </section>
       <section class="main-product">
         <p class="new-product">NEW PRODUCT</p>
         <h1 class="headphone-h1">XX99 MARK II HEADPHONES</h1>

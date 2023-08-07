@@ -1,0 +1,16 @@
+// *:not(.main-nav-section > *) {
+//   backdrop-filter: blur(3px);
+// }
+body {
+}
+.main-nav-section {
+}
+#menu {
+  display: none;
+  margin-top: 32px;
+  position: absolute;
+  width: 100vw;
+  background: rgba(255, 255, 255, 255);
+  border-radius: 10px;
+  z-index: 1;
+}

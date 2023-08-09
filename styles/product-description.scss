@@ -13,11 +13,13 @@
     flex-direction: column;
   }
   .go-back {
-    display: block;
-    width: 57px;
-    height: 25px;
-    text-decoration: none;
-    margin: 16px 24px;
+    a {
+      display: block;
+      width: 57px;
+      height: 25px;
+      text-decoration: none;
+      margin: 16px 24px;
+    }
   }
   .mobile-header {
     width: 100%;
@@ -168,5 +170,229 @@
     .best-audio-bg {
     }
   }
-  
+}
+@media (width > 1080px) {
+  .icon {
+    display: none;
+  }
+  .header {
+    width: 100%;
+    height: 97px;
+    background-color: #000000;
+    display: flex;
+  }
+  .go-back {
+    width: 1110px;
+    margin: 79px auto 0px;
+    a {
+      width: 57px;
+      height: 25px;
+      text-decoration: none;
+    }
+  }
+  .mobile-header {
+    width: 1110px;
+    height: 89px;
+    display: flex;
+    justify-content: space-between;
+    // .main-header-audiophile {
+    //   width: 100%;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   padding: 0px 24px;
+    //   align-items: center;
+    //   .bars {
+    //     color: white;
+    //   }
+    // }
+  }
+  .main-product-container {
+    .product-image {
+      display: flex;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      // width: 90%;
+      height: 327px;
+      margin: 0px 24px;
+      justify-content: center;
+      align-items: center;
+      .headphones-image {
+        transform: translateY(25%);
+      }
+      .shadow {
+        transform: translatey(10%);
+      }
+    }
+  }
+  .new-product {
+    display: flex;
+    width: 1110px;
+    height: 560px;
+    margin: 160px auto;
+    gap: 125px;
+    .product-image {
+      display: flex;
+      flex-direction: column;
+      width: 540px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      .headphones-image {
+        transform: translateY(25%);
+      }
+      .shadow {
+        transform: translatey(10%);
+      }
+    }
+    .product-description {
+      display: flex;
+      width: 445px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      .new-product-title {
+        letter-spacing: 10px;
+        color: #d87d4a;
+      }
+    }
+  }
+
+  .new-product-title {
+    letter-spacing: 10px;
+    color: #d87d4a;
+    margin: 32px 24px 24px;
+  }
+  .headphone-main-title {
+    margin: 24px;
+  }
+  .new-product-description {
+    margin: 24px;
+  }
+  .product-price {
+    margin: 24px 0px 31px 24px;
+  }
+  .button-see-product {
+    padding: 15px 30px;
+    color: white;
+    background-color: #d87d4a;
+    border: none;
+    &:hover {
+      background-color: #fbaf85;
+    }
+  }
+  .add-to-cart {
+    display: flex;
+    align-items: center;
+    margin: 31px 55px 88px 24px;
+    .button-quantity {
+      display: flex;
+      justify-content: space-evenly;
+      width: 120px;
+      height: 48px;
+      .plus-minus {
+        width: 35px;
+      }
+      #quantity {
+        width: 25px;
+      }
+    }
+  }
+  .features-container {
+    display: flex;
+    width: 1110px;
+    margin: auto;
+    gap: 125px;
+    .features {
+      width: 635px;
+      height: 318px;
+    }
+  }
+  .in-the-box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+    .items-inthebox {
+      display: flex;
+      flex-direction: column;
+      .number {
+        color: #d87d4a;
+        font-weight: bold;
+        font-size: 15px;
+        padding-right: 20px;
+      }
+    }
+  }
+  .description-images {
+    display: flex;
+    gap: 30px;
+    width: 1110px;
+    height: 592px;
+    margin: 0px auto 160px;
+    .description-images-first {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 445px;
+      height: 280px;
+    }
+    .description-images-second {
+      width: 435px;
+      height: 592px;
+      img {
+        width: 635px;
+      }
+    }
+  }
+  .you-may-like {
+    display: flex;
+    flex-direction: column;
+    width: 1110px;
+    margin: auto;
+    gap: 64px;
+    h2 {
+      text-align: center;
+    }
+    .youmaylike-containers {
+      display: flex;
+      gap: 30px;
+
+      // align-items: center;
+      .youmaylike-small-containers {
+        width: 350px;
+        height: 471px;
+      }
+    }
+    .img-background {
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      width: 100%;
+      height: 318px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 148px;
+      }
+    }
+  }
+  .title-and-see-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-nav-section {
+    .greather-than {
+      vertical-align: middle;
+      width: 30px;
+      height: 30px;
+      font-size: 25px;
+      color: #d87d4a;
+      font-family: "Manrope", sans-serif;
+    }
+  }
 }

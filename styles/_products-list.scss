@@ -43,11 +43,14 @@
     }
   }
 }
-@media (width > 620px) {
+@media (width > 1080px) {
   .main-nav-section {
     display: flex;
     gap: 30px;
+    margin: auto;
     justify-content: center;
+    align-items: center;
+    width: 1110px;
 
     .grey-bg {
       // margin: 0px 24px 16px 24px;

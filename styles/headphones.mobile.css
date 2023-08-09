@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Philosopher&family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Philosopher&family=Source+Code+Pro&display=swap");
 body {
   margin: 0;
 }
@@ -55,17 +56,18 @@ body {
     height: 365px;
   }
   .footer .orange-footer-line {
-    margin-left: 165px;
-    width: 101px;
+    margin: 0px auto;
+    width: 1110px;
     height: 4px;
-    background-color: #d87d4a;
+    background: linear-gradient(to right, #d87d4a 0px, #d87d4a 101px, #101010 101px, #101010 1110px);
   }
   .footer .links-with-text {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    width: 1110px;
     height: 25px;
-    padding: 75px 165px 48px 165px;
+    margin: 75px auto 0px;
     letter-spacing: 2px;
   }
   .footer-links {
@@ -79,7 +81,8 @@ body {
   .footer-description-and-social {
     display: flex;
     justify-content: space-between;
-    margin: 0px 165px;
+    width: 1110px;
+    margin: auto;
   }
   .footer-description-and-social .footer-text {
     display: flex;
@@ -118,8 +121,9 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin: 120px 24px;
+    margin: 120px auto;
     text-align: left;
+    width: 1110px;
     gap: 30px;
   }
   .best-audio-gear .best-audio-bg {
@@ -130,8 +134,8 @@ body {
     border-radius: 10px;
   }
   .best-audio-gear .best-audio-description {
-    width: calc(50% - 165px);
-    margin-left: 165px;
+    width: 50%;
+    margin-left: 0px;
   }
   .best-audio-gear .best-audio-description h1 {
     width: 445px;
@@ -174,11 +178,14 @@ body {
     color: #d87d4a;
   }
 }
-@media (width > 620px) {
+@media (width > 1080px) {
   .main-nav-section {
     display: flex;
     gap: 30px;
+    margin: auto;
     justify-content: center;
+    align-items: center;
+    width: 1110px;
   }
   .main-nav-section .grey-bg {
     border-radius: 10px;
@@ -217,7 +224,7 @@ body {
 }
 .header {
   position: relative;
-  width: 100vw;
+  width: 100%;
   background-color: #000000;
   display: flex;
   flex-direction: column;
@@ -227,7 +234,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 99vw;
+  width: 100%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.03);
   padding: 25px 0px;
 }
@@ -243,7 +250,10 @@ body {
 
 @media (width > 620px) {
   .mobile-header {
-    width: 98vw;
+    width: 1110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
   }
   .mobile-header .nav-links {
     display: flex;
@@ -257,24 +267,16 @@ body {
     color: #d87d4a;
   }
 }
+#menu {
+  display: none;
+}
+
 @media (width < 620px) {
   #menu {
     display: none;
-    margin-top: 32px;
+    top: 115px;
     position: absolute;
-    width: 100vw;
-    background: rgb(255, 255, 255);
-    border-radius: 10px;
-    z-index: 1;
-  }
-}
-@media (width > 620px) {
-  #menu {
-    display: flex;
-    visibility: hidden;
-    margin-top: 32px;
-    position: absolute;
-    width: 100vw;
+    width: 100%;
     background: rgb(255, 255, 255);
     border-radius: 10px;
     z-index: 1;
@@ -380,5 +382,130 @@ body {
   .product .main-product-description .product-title {
     letter-spacing: 10px;
     color: #d87d4a;
+  }
+}
+@media (width > 1080px) {
+  .main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 102px;
+  }
+  .button-see-product {
+    padding: 15px 30px;
+    color: white;
+    background-color: #d87d4a;
+    border: none;
+    margin-top: 12px;
+  }
+  .button-see-product:hover {
+    background-color: #fbaf85;
+  }
+  .new-product {
+    display: flex;
+    width: 1110px;
+    height: 560px;
+    margin: 160px auto;
+    gap: 125px;
+  }
+  .new-product .product-image {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .new-product .product-image .headphones-image {
+    transform: translateY(25%);
+  }
+  .new-product .product-image .shadow {
+    transform: translatey(10%);
+  }
+  .new-product .product-description {
+    display: flex;
+    width: 445px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .new-product .product-description .new-product-title {
+    letter-spacing: 10px;
+    color: #d87d4a;
+  }
+  .product {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1110px;
+    height: 560px;
+    margin: 160px auto;
+    gap: 125px;
+  }
+  .product .product-image {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .product .product-image .headphones-image {
+    transform: translateY(25%);
+  }
+  .product .product-image .shadow {
+    transform: translatey(5%);
+  }
+  .product .main-product-description {
+    display: flex;
+    width: 445px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .product .main-product-description .product-title {
+    letter-spacing: 10px;
+    color: #d87d4a;
+  }
+  .product-2 {
+    display: flex;
+    width: 1110px;
+    height: 560px;
+    margin: 160px auto;
+    gap: 125px;
+  }
+  .product-2 .product-image {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-2 .product-image .headphones-image {
+    transform: translateY(25%);
+  }
+  .product-2 .product-image .shadow {
+    transform: translatey(5%);
+  }
+  .product-2 .main-product-description {
+    display: flex;
+    width: 445px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-2 .main-product-description .product-title {
+    letter-spacing: 10px;
+    color: #d87d4a;
+  }
+  .icon {
+    display: none;
   }
 }/*# sourceMappingURL=headphones.mobile.css.map */

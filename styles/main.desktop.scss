@@ -9,6 +9,7 @@
 @media (width > 1080px) {
   body {
     margin: 0px;
+    background: #ffffff;
   }
   .icon {
     display: none;
@@ -17,20 +18,31 @@
   .main-section {
     display: flex;
     flex-direction: column;
-    background-image: url(/images/mobile/image-header.jpg);
-    background-color: #111111f6;
-    background-size: 100vw;
-    background-repeat: no-repeat;
+    // background-image: url(/images/mobile/image-header.jpg);
+    background-color: #131313;
+    // background-size: 100vw;
+    // background-repeat: no-repeat;
     color: white;
     height: 100%;
-    margin-bottom: 42px;
+    margin: 0px auto 42px;
+  }
+  .main-container {
+    display: flex;
+    width: 1110px;
+    margin: auto;
+    .main-product-image {
+      img {
+        // width: 100%;
+        // height: 100%;
+      }
+    }
   }
   .main-product {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 398px;
     align-items: flex-start;
-    margin: calc(198px - 75px) 24px 110px 24px;
+    margin: calc(198px - 75px) auto;
     .new-product {
       letter-spacing: 10px;
       font-family: "Manrope", sans-serif;
@@ -64,16 +76,15 @@
   .zx9-speaker {
     display: flex;
     flex-direction: row;
-
+    width: 1110px;
+    margin: 24px auto;
     height: 600px;
     align-items: center;
     text-align: left;
     background-color: #d87d4a;
-    margin: 24px;
     border-radius: 10px;
     color: white;
     justify-content: space-evenly;
-    padding: 50px 20px 0px 20px;
     .zx9-image {
       background-image: url(/images/desktop/zx9-desktop.png);
       width: 60%;
@@ -87,7 +98,7 @@
       p {
         font-size: 15px;
         font-family: "Manrope", sans-serif;
-        color: #F5DED2;
+        color: #f5ded2;
       }
       .main-title {
         font-size: 56px;
@@ -107,7 +118,9 @@
     // width: 100%;
     height: 100%;
     align-items: center;
-    margin: 24px 24px;
+    margin: 24px auto;
+    width: 1110px;
+
     .zx7-image {
       // background-image: url(/images/desktop/zx7-desktop.png);
       // background-size: 100%;
@@ -141,7 +154,8 @@
     }
   }
   .yx1-earphones {
-    margin: 0px 24px;
+    margin: 0px auto;
+    width: 1110px;
     display: flex;
     gap: 24px;
     .yx1-image {

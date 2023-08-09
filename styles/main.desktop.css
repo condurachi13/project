@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Philosopher&family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Philosopher&family=Source+Code+Pro&display=swap");
 body {
   margin: 0;
 }
@@ -315,9 +316,12 @@ body {
   color: white;
 }
 
-@media (width < 620px) {
+@media (width > 1080px) {
   body {
     margin: 0px;
+  }
+  .icon {
+    display: none;
   }
   .main-section {
     display: flex;
@@ -333,79 +337,133 @@ body {
   .main-product {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 400px;
+    align-items: flex-start;
     margin: 123px 24px 110px 24px;
   }
   .main-product .new-product {
     letter-spacing: 10px;
+    font-family: "Manrope", sans-serif;
+    color: rgb(137, 137, 137);
   }
   .main-product .headphone-h1 {
     margin-top: 0;
-    font-size: 36px;
-    text-align: center;
+    font-size: 56px;
+    font-family: "Manrope", sans-serif;
   }
   .main-product .product-description {
-    text-align: center;
-    width: 75%;
+    width: 90%;
     margin-top: -12px;
+    color: #c4c4c4;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .button-see-product {
+    padding: 15px 30px;
+    color: white;
+    background-color: #d87d4a;
+    border: none;
+    margin-top: 12px;
+  }
+  .button-see-product:hover {
+    background-color: #fbaf85;
   }
   .zx9-speaker {
-    height: 600px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 600px;
     align-items: center;
-    text-align: center;
+    text-align: left;
     background-color: #d87d4a;
     margin: 24px;
     border-radius: 10px;
     color: white;
     justify-content: space-evenly;
-    padding: 50px 20px;
+    padding: 50px 20px 0px 20px;
   }
   .zx9-speaker .zx9-image {
-    background-image: url(/images/mobile/speakers-bigger.png);
-    width: 172px;
-    height: 207px;
+    background-image: url(/images/desktop/zx9-desktop.png);
+    width: 60%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
-  .zx9-speaker .main-title {
-    font-size: 36px;
+  .zx9-speaker .zx9-description {
+    width: 349px;
+  }
+  .zx9-speaker .zx9-description p {
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    color: #F5DED2;
+  }
+  .zx9-speaker .zx9-description .main-title {
+    font-size: 56px;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 2px;
   }
   .zx7-speaker {
     display: flex;
-    height: 320px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 24px 24px;
-    background-image: url(/images/mobile/zx7-speaker-bg.png);
+    flex-direction: row;
+    background-image: url(/images/desktop/zx7-desktop.png);
     background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100%;
+    align-items: center;
+    margin: 24px 24px;
     border-radius: 10px;
   }
-  .zx7-speaker h1 {
+  .zx7-speaker .zx7-image {
+    margin-right: 44px;
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+  }
+  .zx7-speaker .zx7-description {
+    position: absolute;
+  }
+  .zx7-speaker .zx7-description h1 {
     margin-left: 24px;
+    font-size: 28px;
+    font-family: "Manrope", sans-serif;
+  }
+  .opacity-button {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    color: #000000;
+    margin-left: 24px;
+  }
+  .opacity-button:hover {
+    background-color: #000000;
+    color: white;
   }
   .yx1-earphones {
     margin: 0px 24px;
     display: flex;
-    flex-direction: column;
     gap: 24px;
   }
   .yx1-earphones .yx1-image {
     background-image: url(/images/mobile/yx1-earphones-bg.png);
-    background-size: cover;
-    height: 200px;
+    background-size: 100%;
+    background-position: center;
+    width: 50%;
+    height: 320px;
     border-radius: 10px;
   }
   .yx1-earphones .yx1-see-product {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     border-radius: 10px;
     background-color: #f1f1f1;
-    height: 200px;
+    height: 320px;
   }
   .yx1-earphones .yx1-see-product h1 {
     margin-left: 24px;
+    font-size: 28px;
+    font-family: "Manrope", sans-serif;
   }
-}/*# sourceMappingURL=main.mobile.css.map */
+}/*# sourceMappingURL=main.desktop.css.map */

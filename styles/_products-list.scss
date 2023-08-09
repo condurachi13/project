@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Philosopher&family=Source+Code+Pro&display=swap");
+
 @media (width < 620px) {
   .main-nav-section {
     display: flex;
@@ -23,7 +25,7 @@
       align-items: center;
 
       .headphone {
-        border-radius: 40%;
+        // border-radius: 40%;
         // box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.637);
       }
       .go-shop {
@@ -39,5 +41,63 @@
         }
       }
     }
+  }
+}
+@media (width > 620px) {
+  .main-nav-section {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+    .grey-bg {
+      // margin: 0px 24px 16px 24px;
+      border-radius: 10px;
+      // DE VERIFICAT
+      background: linear-gradient(
+        to bottom,
+        white 0%,
+        white 25%,
+        #f1f1f1 25%,
+        #f1f1f1 100%
+      );
+      // DE VERIFICAT
+      width: 350px;
+      height: 204px;
+    }
+    .presentation-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .headphone {
+        // border-radius: 40%;
+        // box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.637);
+      }
+      .go-shop {
+      }
+    }
+  }
+  .product-nav-title {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .shop {
+    vertical-align: middle;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    &:hover {
+      color: #d87d4a;
+    }
+  }
+  .greather-than {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    color: #d87d4a;
+    font-family: "Manrope", sans-serif;
   }
 }

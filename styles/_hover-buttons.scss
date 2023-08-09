@@ -1,0 +1,34 @@
+.button-see-product {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 15px 30px;
+  color: white;
+  background-color: #d87d4a;
+  border: none;
+  margin-top: calc(28px - 16px);
+  &:hover {
+    background-color: #fbaf85;
+  }
+}
+.button-see-product.black-button {
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid black;
+  &:hover {
+    color: #ffffff;
+    background-color: black;
+  }
+}
+
+.opacity-button {
+  border: 1px solid black;
+  background-color: #00000000;
+  color: #000000;
+  margin-left: 24px;
+
+  &:hover {
+    background-color: #000000;
+    color: white;
+  }
+}

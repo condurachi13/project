@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Philosopher&family=Source+Code+Pro&display=swap");
 body {
   margin: 0;
 }
@@ -11,6 +12,7 @@ body {
     height: 654px;
     gap: 48px;
     justify-content: space-evenly;
+    align-items: center;
   }
   .footer .links-with-text {
     display: flex;
@@ -18,11 +20,6 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 592px;
-  }
-  .footer .links-with-text .orange-footer-line {
-    width: 101px;
-    height: 4px;
-    background-color: #d87d4a;
   }
   .footer .social-media-links {
     display: flex;
@@ -40,6 +37,63 @@ body {
   .footer-links a {
     text-decoration: none;
     color: white;
+  }
+  .orange-footer-line {
+    width: 101px;
+    height: 4px;
+    background-color: #d87d4a;
+  }
+}
+@media (width > 1080px) {
+  .footer {
+    font-family: "Manrope", sans-serif;
+    line-height: 25px;
+    background-color: #101010;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 365px;
+  }
+  .footer .orange-footer-line {
+    margin-left: 165px;
+    width: 101px;
+    height: 4px;
+    background-color: #d87d4a;
+  }
+  .footer .links-with-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 25px;
+    padding: 75px 165px 48px 165px;
+    letter-spacing: 2px;
+  }
+  .footer-links {
+    display: flex;
+    gap: 16px;
+  }
+  .footer-links a {
+    text-decoration: none;
+    color: white;
+  }
+  .footer-description-and-social {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 165px;
+  }
+  .footer-description-and-social .footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 540px;
+    height: 181px;
+    text-align: left;
+    color: #878787;
+  }
+  .footer-description-and-social .social-media-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
   }
 }
 @media (width < 620px) {
@@ -59,6 +113,40 @@ body {
     color: #d87d4a;
   }
 }
+@media (width > 1080px) {
+  .best-audio-gear {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 120px 24px;
+    text-align: left;
+    gap: 30px;
+  }
+  .best-audio-gear .best-audio-bg {
+    background-image: url(/images/desktop/huy-with-headphones-desktop.png);
+    width: 50%;
+    height: 588px;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .best-audio-gear .best-audio-description {
+    width: calc(50% - 165px);
+    margin-left: 165px;
+  }
+  .best-audio-gear .best-audio-description h1 {
+    width: 445px;
+    font-size: 40px;
+    font-family: "Manrope", sans-serif;
+  }
+  .best-audio-gear .best-audio-description .orange-h1-text {
+    color: #d87d4a;
+  }
+  .best-audio-gear .best-audio-description p {
+    color: #7d7d7d;
+    width: 445px;
+    font-family: "Manrope", sans-serif;
+  }
+}
 @media (width < 620px) {
   .main-nav-section {
     display: flex;
@@ -75,9 +163,6 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .main-nav-section .presentation-images .headphone {
-    border-radius: 40%;
-  }
   .main-nav-section .presentation-images .go-shop .shop {
     border: none;
     background-color: rgba(255, 255, 255, 0);
@@ -89,39 +174,112 @@ body {
     color: #d87d4a;
   }
 }
-@media (width < 620px) {
-  .header {
-    position: relative;
-    width: 100%;
-    background-color: #000000;
+@media (width > 620px) {
+  .main-nav-section {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  .main-nav-section .grey-bg {
+    border-radius: 10px;
+    background: linear-gradient(to bottom, white 0%, white 25%, #f1f1f1 25%, #f1f1f1 100%);
+    width: 350px;
+    height: 204px;
+  }
+  .main-nav-section .presentation-images {
     display: flex;
     flex-direction: column;
-  }
-  .mobile-header {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.03);
-    padding: 25px 0px;
   }
-  .mobile-header .fa-bars {
-    color: white;
+  .product-nav-title {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
   }
-  .mobile-header #menu {
-    margin-top: 32px;
+  .shop {
+    vertical-align: middle;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .shop:hover {
+    color: #d87d4a;
+  }
+  .greather-than {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    color: #d87d4a;
+    font-family: "Manrope", sans-serif;
   }
 }
-#menu {
-  display: none;
-  margin-top: 32px;
-  position: absolute;
+.header {
+  position: relative;
   width: 100vw;
-  background: rgb(255, 255, 255);
-  border-radius: 10px;
-  z-index: 1;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
 }
 
+.mobile-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 99vw;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.03);
+  padding: 25px 0px;
+}
+.mobile-header .nav-links {
+  display: none;
+}
+.mobile-header .fa-bars {
+  color: white;
+}
+.mobile-header #menu {
+  margin-top: 32px;
+}
+
+@media (width > 620px) {
+  .mobile-header {
+    width: 98vw;
+  }
+  .mobile-header .nav-links {
+    display: flex;
+    gap: 34px;
+  }
+  .mobile-header .nav-links a {
+    text-decoration: none;
+    color: white;
+  }
+  .mobile-header .nav-links a:hover {
+    color: #d87d4a;
+  }
+}
+@media (width < 620px) {
+  #menu {
+    display: none;
+    margin-top: 32px;
+    position: absolute;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 1;
+  }
+}
+@media (width > 620px) {
+  #menu {
+    display: flex;
+    visibility: hidden;
+    margin-top: 32px;
+    position: absolute;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 1;
+  }
+}
 @media (width < 620px) {
   .header {
     width: 100%;

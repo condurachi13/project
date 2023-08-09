@@ -15,3 +15,37 @@
     }
   }
 }
+@media (width > 1080px) {
+  .best-audio-gear {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 120px 24px;
+    text-align: left;
+    gap: 30px;
+    .best-audio-bg {
+      background-image: url(/images/desktop/huy-with-headphones-desktop.png);
+      width: 50%;
+      height: 588px;
+      background-size: cover;
+      border-radius: 10px;
+    }
+    .best-audio-description {
+      width: calc(50% - 165px);
+      margin-left: 165px;
+      h1 {
+        width: 445px;
+        font-size: 40px;
+        font-family: "Manrope", sans-serif;
+      }
+      .orange-h1-text {
+        color: #d87d4a;
+      }
+      p {
+        color: #7d7d7d;
+        width: 445px;
+        font-family: "Manrope", sans-serif;
+      }
+    }
+  }
+}

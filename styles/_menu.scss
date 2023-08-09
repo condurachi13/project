@@ -5,6 +5,8 @@ body {
 }
 .main-nav-section {
 }
+@media (width < 620px){
+  
 #menu {
   display: none;
   margin-top: 32px;
@@ -13,4 +15,18 @@ body {
   background: rgba(255, 255, 255, 255);
   border-radius: 10px;
   z-index: 1;
+}
+}
+@media (width > 620px){
+  
+#menu {
+  display: flex;
+  visibility: hidden;
+  margin-top: 32px;
+  position: absolute;
+  width: 100vw;
+  background: rgba(255, 255, 255, 255);
+  border-radius: 10px;
+  z-index: 1;
+}
 }

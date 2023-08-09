@@ -4,6 +4,7 @@
 @import "header";
 @import "products-list";
 @import "menu";
+@import "hover-buttons";
 @media (width < 620px) {
   body {
     margin: 0px;
@@ -38,18 +39,13 @@
       margin-top: calc(24px - 36px);
     }
   }
-  .button-see-product {
-    padding: 15px 30px;
-    color: white;
-    background-color: #d87d4a;
-    border: none;
-    margin-top: calc(28px - 16px);
-    &:hover {
-      background-color: #fbaf85;
-    }
-  }
 
   .zx9-speaker {
+    .zx9-image {
+      background-image: url(/images/mobile/speakers-bigger.png);
+      width: 172px;
+      height: 207px;
+    }
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -64,9 +60,9 @@
     .main-title {
       font-size: 36px;
     }
-    .black-button {
-      background-color: #000000;
-    }
+    // .black-button {
+    //   background-color: #000000;
+    // }
   }
   .zx7-speaker {
     display: flex;
@@ -82,17 +78,7 @@
       margin-left: 24px;
     }
   }
-  .opacity-button {
-    border: 1px solid black;
-    background-color: #00000000;
-    color: #000000;
-    margin-left: 24px;
 
-    &:hover {
-      background-color: #000000;
-      color: white;
-    }
-  }
   .yx1-earphones {
     margin: 0px 24px;
     display: flex;

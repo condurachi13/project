@@ -91,6 +91,9 @@
     a {
       text-decoration: none;
       color: white;
+      &:hover {
+        color: #d87d4a;
+      }
     }
   }
   .footer-description-and-social {
@@ -110,7 +113,12 @@
     .social-media-links {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 16px; 
+      a {
+        .hover-color:hover {
+          fill: #d87d4a;
+        }
+      }
     }
   }
 }

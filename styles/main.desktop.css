@@ -79,6 +79,9 @@ body {
     text-decoration: none;
     color: white;
   }
+  .footer-links a:hover {
+    color: #d87d4a;
+  }
   .footer-description-and-social {
     display: flex;
     justify-content: space-between;
@@ -98,6 +101,9 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
+  }
+  .footer-description-and-social .social-media-links a .hover-color:hover {
+    fill: #d87d4a;
   }
 }
 @media (width < 620px) {
@@ -250,6 +256,7 @@ body {
     font-weight: 600;
   }
   .shop {
+    cursor: pointer;
     vertical-align: middle;
     font-family: "Manrope", sans-serif;
     font-size: 13px;
@@ -292,19 +299,21 @@ body {
   background-color: #d87d4a;
   border: none;
   margin-top: 12px;
+  cursor: pointer;
 }
 .button-see-product:hover {
   background-color: #fbaf85;
 }
 
 .button-see-product.black-button {
-  background-color: #ffffff;
-  color: black;
+  background-color: black;
+  color: white;
   border: 1px solid black;
 }
 .button-see-product.black-button:hover {
+  border: 1px solid #4c4c4c;
   color: #ffffff;
-  background-color: black;
+  background-color: #4c4c4c;
 }
 
 .opacity-button {

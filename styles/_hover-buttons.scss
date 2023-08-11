@@ -7,17 +7,19 @@
   background-color: #d87d4a;
   border: none;
   margin-top: calc(28px - 16px);
+  cursor: pointer;
   &:hover {
     background-color: #fbaf85;
   }
 }
 .button-see-product.black-button {
-  background-color: #ffffff;
-  color: black;
+  background-color: black;
+  color: white;
   border: 1px solid black;
   &:hover {
+    border: 1px solid #4c4c4c;
     color: #ffffff;
-    background-color: black;
+    background-color: #4c4c4c;
   }
 }
 

@@ -78,6 +78,9 @@ body {
     text-decoration: none;
     color: white;
   }
+  .footer-links a:hover {
+    color: #d87d4a;
+  }
   .footer-description-and-social {
     display: flex;
     justify-content: space-between;
@@ -97,6 +100,9 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
+  }
+  .footer-description-and-social .social-media-links a .hover-color:hover {
+    fill: #d87d4a;
   }
 }
 @media (width < 620px) {
@@ -204,6 +210,7 @@ body {
     font-weight: 600;
   }
   .shop {
+    cursor: pointer;
     vertical-align: middle;
     font-family: "Manrope", sans-serif;
     font-size: 13px;
@@ -385,6 +392,9 @@ body {
   }
 }
 @media (width > 1080px) {
+  body {
+    font-family: "Manrope", sans-serif;
+  }
   .main-title {
     display: flex;
     justify-content: center;
@@ -392,12 +402,18 @@ body {
     color: white;
     height: 102px;
   }
+  .link-see-product {
+    margin-top: 12px;
+  }
   .button-see-product {
+    cursor: pointer;
     padding: 15px 30px;
     color: white;
     background-color: #d87d4a;
     border: none;
-    margin-top: 12px;
+  }
+  .button-see-product a {
+    height: 45px;
   }
   .button-see-product:hover {
     background-color: #fbaf85;
@@ -470,6 +486,9 @@ body {
   .product .main-product-description .product-title {
     letter-spacing: 10px;
     color: #d87d4a;
+  }
+  .second-product {
+    flex-direction: row;
   }
   .product-2 {
     display: flex;

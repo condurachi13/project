@@ -78,6 +78,9 @@ body {
     text-decoration: none;
     color: white;
   }
+  .footer-links a:hover {
+    color: #d87d4a;
+  }
   .footer-description-and-social {
     display: flex;
     justify-content: space-between;
@@ -97,6 +100,9 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
+  }
+  .footer-description-and-social .social-media-links a .hover-color:hover {
+    fill: #d87d4a;
   }
 }
 @media (width < 620px) {
@@ -204,6 +210,7 @@ body {
     font-weight: 600;
   }
   .shop {
+    cursor: pointer;
     vertical-align: middle;
     font-family: "Manrope", sans-serif;
     font-size: 13px;
@@ -453,7 +460,7 @@ body {
   }
   .go-back {
     width: 1110px;
-    margin: 79px auto 0px;
+    margin: 79px auto -104px;
   }
   .go-back a {
     width: 57px;

@@ -5,6 +5,7 @@
 @import "products-list";
 @import "menu";
 @import "hover-buttons";
+@import "typography";
 @media (width < 480px) {
   body {
     margin: 0px;
@@ -31,13 +32,21 @@
     .headphone-h1 {
       margin-top: 0;
       font-size: 36px;
+      line-height: 40px;
+      letter-spacing: 1.29px;
       text-align: center;
     }
     .product-description {
       text-align: center;
-      width: 75%;
+      width: 100%;
       margin-top: calc(24px - 36px);
     }
+  }
+  .main-title {
+    width: 280px;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
   }
 
   .zx9-speaker {
@@ -57,9 +66,7 @@
     color: white;
     justify-content: space-evenly;
     padding: 50px 20px;
-    .main-title {
-      font-size: 36px;
-    }
+
     // .black-button {
     //   background-color: #000000;
     // }

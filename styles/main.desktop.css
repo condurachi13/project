@@ -119,7 +119,7 @@ body {
     background-size: cover;
     border-radius: 10px;
   }
-  .best-audio-gear .orange-h1-text {
+  .orange-h1-text {
     color: #d87d4a;
   }
 }
@@ -184,7 +184,7 @@ body {
   margin-top: 32px;
 }
 
-@media (width > 620px) {
+@media (width > 480px) {
   .mobile-header {
     width: 1110px;
     margin: auto;
@@ -194,6 +194,7 @@ body {
   .mobile-header .nav-links {
     display: flex;
     gap: 34px;
+    width: 550px;
   }
   .mobile-header .nav-links a {
     text-decoration: none;
@@ -362,6 +363,7 @@ body {
   .main-product {
     display: flex;
     flex-direction: column;
+    gap: 24px;
     width: 398px;
     align-items: flex-start;
     margin: 123px auto;
@@ -370,15 +372,17 @@ body {
     letter-spacing: 10px;
     font-family: "Manrope", sans-serif;
     color: rgb(137, 137, 137);
+    margin: 0px;
   }
   .main-product .headphone-h1 {
-    margin-top: 0;
+    margin: 0px;
     font-size: 56px;
     font-family: "Manrope", sans-serif;
+    letter-spacing: 2px;
+    line-height: 58px;
   }
   .main-product .product-description {
     width: 90%;
-    margin-top: -12px;
     color: #c4c4c4;
     font-family: "Manrope", sans-serif;
     font-size: 15px;
@@ -398,7 +402,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 1110px;
-    margin: 24px auto;
+    margin: 168px auto 24px;
     height: 600px;
     align-items: center;
     text-align: left;

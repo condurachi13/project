@@ -23,7 +23,7 @@
     margin-top: 32px;
   }
 }
-@media (width > 620px) {
+@media (width > 480px) {
   .mobile-header {
     width: 1110px;
     margin: auto;
@@ -33,6 +33,7 @@
     .nav-links {
       display: flex;
       gap: 34px;
+      width: 550px;
       a {
         text-decoration: none;
         color: white;

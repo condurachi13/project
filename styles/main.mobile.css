@@ -118,7 +118,7 @@ body {
     background-size: cover;
     border-radius: 10px;
   }
-  .best-audio-gear .orange-h1-text {
+  .orange-h1-text {
     color: #d87d4a;
   }
 }
@@ -183,7 +183,7 @@ body {
   margin-top: 32px;
 }
 
-@media (width > 620px) {
+@media (width > 480px) {
   .mobile-header {
     width: 1110px;
     margin: auto;
@@ -193,6 +193,7 @@ body {
   .mobile-header .nav-links {
     display: flex;
     gap: 34px;
+    width: 550px;
   }
   .mobile-header .nav-links a {
     text-decoration: none;
@@ -337,6 +338,76 @@ body {
   color: white;
 }
 
+* body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #7d7d7d;
+}
+
+.h1 {
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.h4 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.h5 {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.h6 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+
+.h4-white {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 @media (width < 480px) {
   body {
     margin: 0px;
@@ -364,12 +435,20 @@ body {
   .main-product .headphone-h1 {
     margin-top: 0;
     font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
     text-align: center;
   }
   .main-product .product-description {
     text-align: center;
-    width: 75%;
+    width: 100%;
     margin-top: -12px;
+  }
+  .main-title {
+    width: 280px;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
   }
   .zx9-speaker {
     height: 600px;
@@ -388,9 +467,6 @@ body {
     background-image: url(/images/mobile/speakers-bigger.png);
     width: 172px;
     height: 207px;
-  }
-  .zx9-speaker .main-title {
-    font-size: 36px;
   }
   .zx7-speaker {
     display: flex;

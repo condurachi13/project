@@ -118,7 +118,7 @@ body {
     background-size: cover;
     border-radius: 10px;
   }
-  .best-audio-gear .orange-h1-text {
+  .orange-h1-text {
     color: #d87d4a;
   }
 }
@@ -266,7 +266,7 @@ body {
   margin-top: 32px;
 }
 
-@media (width > 620px) {
+@media (width > 480px) {
   .mobile-header {
     width: 1110px;
     margin: auto;
@@ -276,6 +276,7 @@ body {
   .mobile-header .nav-links {
     display: flex;
     gap: 34px;
+    width: 550px;
   }
   .mobile-header .nav-links a {
     text-decoration: none;
@@ -312,7 +313,8 @@ body {
   font-size: 56px;
   line-height: 58px;
   letter-spacing: 2px;
-  color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .h2 {
@@ -320,6 +322,7 @@ body {
   line-height: 44px;
   letter-spacing: 1.5px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .h3 {
@@ -327,6 +330,7 @@ body {
   line-height: 36px;
   letter-spacing: 1.15px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .h4 {
@@ -334,6 +338,7 @@ body {
   line-height: 38px;
   letter-spacing: 2px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .h5 {
@@ -341,6 +346,7 @@ body {
   line-height: 33px;
   letter-spacing: 1.7px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .h6 {
@@ -348,12 +354,21 @@ body {
   line-height: 24px;
   letter-spacing: 1.3px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .footer-links {
   font-size: 13px;
   line-height: 25px;
   letter-spacing: 2px;
+}
+
+.h4-white {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 @media (width < 480px) {
@@ -533,9 +548,6 @@ body {
   .main-nav-section {
     margin: 120px 0px 58px 0px;
     top: 58px;
-  }
-  .best-audio-gear h1 {
-    margin: 40px 24px 32px 24px;
   }
 }
 @media (width > 1080px) {

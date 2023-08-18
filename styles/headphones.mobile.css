@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-@media (width < 620px) {
+@media (width < 480px) {
   .footer {
     background-color: #101010;
     text-align: center;
@@ -105,7 +105,7 @@ body {
     fill: #d87d4a;
   }
 }
-@media (width < 620px) {
+@media (width < 480px) {
   .best-audio-gear {
     display: flex;
     flex-direction: column;
@@ -157,7 +157,14 @@ body {
     font-family: "Manrope", sans-serif;
   }
 }
-@media (width < 620px) {
+@media (width < 480px) {
+  .product-nav-title {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1.07px;
+    color: #000000;
+  }
   .main-nav-section {
     display: flex;
     flex-direction: column;
@@ -176,6 +183,10 @@ body {
   .main-nav-section .presentation-images .go-shop .shop {
     border: none;
     background-color: rgba(255, 255, 255, 0);
+    color: #7d7d7d;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
   }
   .main-nav-section .presentation-images .go-shop .shop:hover {
     color: #d87d4a;
@@ -278,7 +289,7 @@ body {
   display: none;
 }
 
-@media (width < 620px) {
+@media (width < 480px) {
   #menu {
     display: none;
     top: 115px;
@@ -289,7 +300,63 @@ body {
     z-index: 1;
   }
 }
-@media (width < 620px) {
+* body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #7d7d7d;
+}
+
+.h1 {
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+  color: #000000;
+}
+
+.h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+  color: #000000;
+}
+
+.h4 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.h5 {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+  color: #000000;
+}
+
+.h6 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+  color: #000000;
+}
+
+.footer-links {
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+
+@media (width < 480px) {
   .header {
     width: 100%;
     height: 192px;

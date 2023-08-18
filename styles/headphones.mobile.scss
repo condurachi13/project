@@ -4,8 +4,9 @@
 @import "products-list";
 @import "header";
 @import "menu";
+@import "typography";
 
-@media (width < 620px) {
+@media (width < 480px) {
   .header {
     width: 100%;
     height: 192px;

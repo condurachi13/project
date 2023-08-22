@@ -185,6 +185,15 @@ body {
 }
 
 @media (width > 480px) {
+  .go-back {
+    width: 1110px;
+    margin: 79px auto -104px;
+  }
+  .go-back a {
+    width: 57px;
+    height: 25px;
+    text-decoration: none;
+  }
   .mobile-header {
     width: 1110px;
     margin: auto;

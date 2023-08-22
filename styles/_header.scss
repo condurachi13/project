@@ -23,7 +23,33 @@
     margin-top: 32px;
   }
 }
+// .mobile-header {
+//   width: 1110px;
+//   height: 89px;
+//   display: flex;
+//   justify-content: space-between;
+//   // .main-header-audiophile {
+//   //   width: 100%;
+//   //   display: flex;
+//   //   justify-content: space-between;
+//   //   padding: 0px 24px;
+//   //   align-items: center;
+//   //   .bars {
+//   //     color: white;
+//   //   }
+//   // }
+// }
 @media (width > 480px) {
+  .go-back {
+    width: 1110px;
+    margin: 79px auto -104px;
+    a {
+      width: 57px;
+      height: 25px;
+      text-decoration: none;
+    }
+  }
+
   .mobile-header {
     width: 1110px;
     margin: auto;

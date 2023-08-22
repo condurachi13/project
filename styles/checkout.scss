@@ -1,0 +1,100 @@
+@import "base";
+@import "footer";
+@import "best-audio-gear";
+@import "products-list";
+@import "header";
+@import "menu";
+@import "typography";
+
+body {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+@media (width > 1080px) {
+  .icon {
+    display: none;
+  }
+  .main-form-container {
+    width: 1110px;
+    height: 1126px;
+    margin: 142px auto 141px;
+  }
+  .checkout-container {
+    width: 1110px;
+    height: 1126px;
+    display: flex;
+    // margin: 0px auto;
+    gap: 30px;
+    .checkout {
+      background-color: white;
+      width: 730px;
+      height: 1126px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px;
+      padding: 54px 48px 48px;
+      .h3 {
+        margin-top: 0px;
+        color: #cfcfcf;
+      }
+    }
+    .summary {
+      width: 350px;
+      height: 450px;
+      background-color: white;
+      border-radius: 5px;
+      padding: 32px 33px;
+      .h6 {
+        margin: 0;
+      }
+    }
+  }
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .input-and-label {
+    display: flex;
+    flex-direction: column;
+    input {
+      width: 307px;
+      height: 56px;
+      border: 1px solid #cfcfcf;
+      border-radius: 10px;
+      padding-left: 24px;
+    }
+    .address-input {
+      width: 665px;
+    }
+  }
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .payment-form-inputs {
+      .radio-payment {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // width: 309px;
+        height: 56px;
+        border: 1px solid #cfcfcf;
+        margin-bottom: 16px;
+        border-radius: 10px;
+        padding-left: 16px;
+        .payment-input {
+          width: 20px;
+          height: 20px;
+        }
+        label {
+          width: calc(307px - 34px);
+          height: 100%;
+          display: flex;
+          align-items: center;
+          padding-left: 16px;
+        }
+      }
+    }
+  }
+}

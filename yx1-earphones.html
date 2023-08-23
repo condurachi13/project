@@ -8,7 +8,6 @@
     <!-- <link rel="stylesheet" href="/styles/headphones.mobile.css" /> -->
 
     <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
-    <script src="/js/menu.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -138,9 +137,15 @@
 
         <section class="add-to-cart">
           <section class="button-quantity">
-            <button class="plus-minus">-</button>
-            <input type="number" name="quantity" id="quantity" value="1" />
-            <button class="plus-minus">+</button>
+            <button onclick="minusQuantity()" class="minus-button">-</button>
+            <input
+              type="number"
+              name="quantity"
+              id="quantity"
+              value="1"
+              readonly
+            />
+            <button onclick="plusQuantity()" class="plus-button">+</button>
           </section>
           <button type="button" class="button-see-product">ADD TO CART</button>
         </section>
@@ -406,5 +411,7 @@
         </section>
       </section>
     </section>
+    <script src="/js/menu.js"></script>
+    <script src="/js/quantity.js"></script>
   </body>
 </html>

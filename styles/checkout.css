@@ -303,7 +303,7 @@ body {
   #menu {
     display: none;
     top: 115px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     background: rgb(255, 255, 255);
     border-radius: 10px;

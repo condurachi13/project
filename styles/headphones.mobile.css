@@ -431,6 +431,12 @@ body {
 .checkout-button {
   width: 313px;
   height: 48px;
+  background-color: #d87d4a;
+  border: none;
+  color: white;
+}
+.checkout-button:hover {
+  background-color: #fbaf85;
 }
 
 @media (width < 480px) {

@@ -5,6 +5,7 @@
 @import "header";
 @import "menu";
 @import "typography";
+@import "modal";
 
 body {
   background-color: #f1f1f1;
@@ -83,9 +84,15 @@ body {
         margin-bottom: 16px;
         border-radius: 10px;
         padding-left: 16px;
+
+        &:hover {
+          cursor: pointer;
+          outline: 1px solid #d87d4a;
+        }
         .payment-input {
           width: 20px;
           height: 20px;
+          accent-color: #d87d4a;
         }
         label {
           width: calc(307px - 34px);
@@ -96,5 +103,21 @@ body {
         }
       }
     }
+  }
+  input:focus {
+    outline: 1px solid #d87d4a;
+    cursor: pointer;
+  }
+  input:hover {
+    cursor: pointer;
+  }
+  .payment-input:hover {
+    cursor: pointer;
+  }
+  input[type="radio"]:focus {
+    outline: none;
+  }
+  input[type="radio"]:checked {
+    background-color: #d87d4a;
   }
 }

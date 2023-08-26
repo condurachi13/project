@@ -417,6 +417,65 @@ body {
   text-transform: uppercase;
 }
 
+#modal-background {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  top: 0;
+}
+
+#modal {
+  position: absolute;
+  display: block;
+  width: 313px;
+  height: 191px;
+  background-color: white;
+  top: 111px;
+  right: 165px;
+  z-index: 5;
+  border-radius: 10px;
+  padding: 32px 32px;
+}
+#modal .modal-containers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-title .cart-items-number {
+  margin: 0;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-total .total-text,
+.cart-total .cart-total-price {
+  margin: 0;
+}
+
+.checkout-button {
+  width: 313px;
+  height: 48px;
+  background-color: #d87d4a;
+  border: none;
+  color: white;
+}
+.checkout-button:hover {
+  background-color: #fbaf85;
+}
+
 @media (width < 480px) {
   body {
     margin: 0px;

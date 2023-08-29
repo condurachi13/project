@@ -4,17 +4,163 @@
 @import "products-list";
 @import "header";
 @import "menu";
+@import "hover-buttons";
 @import "typography";
 @import "modal";
 
 body {
   background-color: #f1f1f1;
   width: 100%;
-}
-@media (width > 1080px) {
-  .icon {
-    display: none;
+  p,
+  h3 {
+    margin: 0;
   }
+}
+@media (width < 480px) {
+  .icon {
+    display: block;
+  }
+  .main-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    margin: auto;
+  }
+  .checkout-container {
+    background-color: white; // de verificat
+    width: 327px;
+    height: 1990px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin: 0px auto;
+    gap: 30px;
+    .checkout {
+      background-color: white;
+      width: 280px;
+      height: 1378px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      border-radius: 5px;
+      gap: 24px;
+      .h3 {
+        margin-top: 0px;
+        color: #cfcfcf;
+      }
+    }
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .input-and-label {
+    display: flex;
+    flex-direction: column;
+    input {
+      display: flex;
+      flex-direction: column;
+      width: calc(280px - 28px);
+      height: 56px;
+      border: 1px solid #cfcfcf;
+      border-radius: 10px;
+      padding-left: 24px;
+      align-self: center;
+    }
+    .address-input {
+      width: calc(280px - 30px);
+    }
+  }
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+    .payment-form-inputs {
+      .radio-payment {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: calc(280px - 18px);
+        height: 56px;
+        border: 1px solid #cfcfcf;
+        margin-bottom: 16px;
+        border-radius: 10px;
+        padding-left: 16px;
+
+        &:hover {
+          cursor: pointer;
+          outline: 1px solid #d87d4a;
+        }
+        .payment-input {
+          width: 20px;
+          height: 20px;
+          accent-color: #d87d4a;
+        }
+        label {
+          width: calc(307px - 34px);
+          height: 100%;
+          display: flex;
+          align-items: center;
+          padding-left: 16px;
+        }
+      }
+    }
+  }
+  input:focus {
+    outline: 1px solid #d87d4a;
+    cursor: pointer;
+  }
+  input:hover {
+    cursor: pointer;
+  }
+  .payment-input:hover {
+    cursor: pointer;
+  }
+  input[type="radio"]:focus {
+    outline: none;
+  }
+  input[type="radio"]:checked {
+    background-color: #d87d4a;
+  }
+  img {
+    width: 50px;
+  }
+  .motor-bike-container {
+    display: flex;
+  }
+  .summary {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    background-color: white;
+    border-radius: 5px;
+    .h6 {
+      margin: 0;
+    }
+  }
+  button {
+    background-color: white;
+    border: none;
+  }
+  .summary-removeall {
+    display: flex;
+    justify-content: space-between;
+    button {
+      display: none;
+    }
+  }
+  #total {
+    height: 20px;
+    width: 100px;
+    border: 1px solid red;
+  }
+}
+
+@media (width > 1080px) {
+  // .icon {
+  //   display: none;
+  // }
   .main-form-container {
     width: 1110px;
     height: 1126px;
@@ -37,16 +183,6 @@ body {
       .h3 {
         margin-top: 0px;
         color: #cfcfcf;
-      }
-    }
-    .summary {
-      width: 350px;
-      height: 450px;
-      background-color: white;
-      border-radius: 5px;
-      padding: 32px 33px;
-      .h6 {
-        margin: 0;
       }
     }
   }
@@ -119,5 +255,36 @@ body {
   }
   input[type="radio"]:checked {
     background-color: #d87d4a;
+  }
+  img {
+    width: 50px;
+  }
+  .motor-bike-container {
+    display: flex;
+  }
+  .summary {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 32px 33px;
+    .h6 {
+      margin: 0;
+    }
+  }
+  button {
+    background-color: white;
+    border: none;
+  }
+  .summary-removeall {
+    display: flex;
+    justify-content: space-between;
+  }
+  #total {
+    height: 20px;
+    width: 100px;
+    border: 1px solid red;
   }
 }

@@ -11,6 +11,8 @@
   .main-nav-section {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-top: 32px;
 
     .grey-bg {
       margin: 0px 24px 16px 24px;

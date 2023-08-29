@@ -168,6 +168,8 @@ body {
   .main-nav-section {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-top: 32px;
   }
   .main-nav-section .grey-bg {
     margin: 0px 24px 16px 24px;
@@ -301,10 +303,11 @@ body {
 
 @media (width < 480px) {
   #menu {
-    display: none;
+    margin: 0;
     top: 115px;
     position: fixed;
     width: 100%;
+    height: 718px;
     background: rgb(255, 255, 255);
     border-radius: 10px;
     z-index: 1;
@@ -394,7 +397,6 @@ body {
   position: absolute;
   display: block;
   width: 313px;
-  height: 191px;
   background-color: white;
   top: 111px;
   right: 165px;
@@ -439,6 +441,22 @@ body {
   background-color: #fbaf85;
 }
 
+@media (width < 480px) {
+  #modal {
+    position: absolute;
+    width: 271px;
+    left: 50%;
+    top: 114px;
+    padding: 31px 28px;
+    transform: translate(-50%);
+  }
+  .checkout-button {
+    width: 271px;
+  }
+  .modal-containers {
+    width: 271px;
+  }
+}
 @media (width < 480px) {
   .header {
     width: 100%;

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/styles/product-description.css" />
     <!-- <link rel="stylesheet" href="/styles/main.desktop.css" /> -->
     <!-- <link rel="stylesheet" href="/styles/headphones.mobile.css" /> -->
+    <script src="/js/initData.js"></script>
 
     <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
     <link
@@ -17,7 +18,7 @@
     />
     <title>Audiophile</title>
   </head>
-  <body id="body">
+  <body id="body" onload="generateList()">
     <section id="modal-background">
       <section id="modal">
         <section class="modal-containers">
@@ -27,6 +28,7 @@
             </h6>
             <a href="#">Remove all</a>
           </section>
+          <section id="containers" id="divs"></section>
           <section class="cart-total">
             <p class="total-text">TOTAL</p>
             <p class="h6 cart-total-price">$ <span id="totalPrice">0</span></p>
@@ -168,7 +170,9 @@
             />
             <button onclick="plusQuantity()" class="plus-button">+</button>
           </section>
-          <button type="button" class="button-see-product">ADD TO CART</button>
+          <button id="addtocart" type="button" class="button-see-product">
+            ADD TO CART
+          </button>
         </section>
       </section>
     </section>
@@ -434,6 +438,10 @@
     </section>
     <script src="/js/menu.js"></script>
     <script src="/js/modal.js"></script>
+    <!-- <script src="/js/text.js"></script> -->
+    <!-- <script src="/js/test.js"></script> -->
     <script src="/js/quantity.js"></script>
+    <!-- <script src="/js/checkout.js"></script> -->
+    <script src="/js/domScript.js"></script>
   </body>
 </html>

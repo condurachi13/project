@@ -11,7 +11,7 @@
   position: absolute;
   display: block;
   width: calc(377px - 64px);
-  height: 191px;
+  // height: 191px;
   background-color: white;
   top: calc(79px + 32px);
   right: 165px;
@@ -50,5 +50,21 @@
   color: white;
   &:hover {
     background-color: #fbaf85;
+  }
+}
+@media (width < 480px) {
+  #modal {
+    position: absolute;
+    width: calc(327px - 56px);
+    left: 50%;
+    top: 114px;
+    padding: 31px 28px;
+    transform: translate(-50%);
+  }
+  .checkout-button {
+    width: 271px;
+  }
+  .modal-containers {
+    width: 271px;
   }
 }

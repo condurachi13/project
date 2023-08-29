@@ -6,10 +6,11 @@
 }
 @media (width < 480px) {
   #menu {
-    display: none;
+    margin: 0;
     top: 115px;
     position: fixed;
     width: 100%;
+    height: calc(750px - 32px);
     background: rgba(255, 255, 255, 255);
     border-radius: 10px;
     z-index: 1;

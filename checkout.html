@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/checkout.css" />
+    <link rel="stylesheet" href="/styles/cart.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -13,7 +14,7 @@
     />
     <title>Document</title>
   </head>
-  <body id="body" onload="getCheckoutItemsAndTotal()">
+  <body id="body" onload="getCheckoutItemsAndTotal(), checkoutSummary()">
     <section id="modal-background">
       <section id="modal">
         <section class="modal-containers">
@@ -21,11 +22,12 @@
             <h6 class="h6 cart-items-number">
               CART (<span id="cart-total-items">0</span>)
             </h6>
-            <a href="#">Remove all</a>
+            <a onclick="clearArray()">Remove all</a>
           </section>
+          <section id="containers" id="divs"></section>
           <section class="cart-total">
-            <p class="total-text">TOTAL</p>
-            <p class="h6 cart-total-price">$ <span id="total">0</span></p>
+            <p class="total-text" id="total">TOTAL</p>
+            <p class="h6 cart-total-price">$ <span id="totalPrice">0</span></p>
           </section>
           <a href="checkout.html" class="link-see-product">
             <button type="button" class="button-see-product checkout-button">
@@ -128,11 +130,11 @@
     <section class="go-back">
       <a href="headphones.html"> Go Back</a>
     </section>
-    <form action="#" class="main-form-container">
+    <form action="#" id="form" class="main-form-container" method="post">
       <section class="checkout-container">
         <section class="checkout">
           <h3 class="h3">CHECKOUT</h3>
-          <p>BILLING DETAILS</p>
+          <p class="billing-payment-details">BILLING DETAILS</p>
           <section class="form">
             <section class="input-and-label">
               <label for="name">Name</label>
@@ -162,7 +164,7 @@
               />
             </section>
           </section>
-          <p>SHIPPING INFO</p>
+          <p class="billing-payment-details">SHIPPING INFO</p>
           <section class="form">
             <section class="input-and-label adress">
               <label for="address">Address</label>
@@ -197,8 +199,8 @@
               />
             </section>
           </section>
-          <p>PAYMENT DETAILS</p>
-          <p>Payment Method</p>
+          <p class="billing-payment-details">PAYMENT DETAILS</p>
+          <p class="payment-method-title">Payment Method</p>
           <section class="form payment-form">
             <section class="payment-form-inputs">
               <section class="radio-payment">
@@ -246,11 +248,27 @@
         <section class="summary">
           <section class="summary-removeall">
             <h5 class="h6">SUMMARY</h5>
-            <button>Remove all</button>
+            <!-- <button>Remove all</button> -->
           </section>
 
-          <div id="products"></div>
-          <div id="total"></div>
+          <div id="products-summary"></div>
+          <section>
+            <section class="total-price">
+              <div>TOTAL</div>
+              <div id="total-summary"></div>
+            </section>
+            <section class="shipping-price">SHIPPING</section>
+            <section class="vat-price">VAT (INCLUDED)</section>
+            <section class="grand-total">GRAND TOTAL</section>
+            <button
+              type="submit"
+              form="form"
+              value="submit"
+              class="button-see-product"
+            >
+              CONTINUE
+            </button>
+          </section>
         </section>
       </section>
     </form>
@@ -347,6 +365,10 @@
     </section>
     <script src="/js/menu.js"></script>
     <script src="/js/modal.js"></script>
+    <script src="/js/checkout-summary.js"></script>
+    <script src="/js/quantity.js"></script>
     <script src="/js/checkout.js"></script>
+    <script src="/js/initData.js"></script>
+    <script src="/js/test.js"></script>
   </body>
 </html>

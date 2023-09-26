@@ -1,102 +1,98 @@
-function removeFromCart(bike) {
-  // imi iau motocicletele din cart
-  const bikesInCart = JSON.parse(localStorage.getItem("cart"));
+function removeFromCart(product) {
+  const productsInCart = JSON.parse(localStorage.getItem("cart"));
+  const selectedProduct = productsInCart.find((cartProduct) => cartProduct.id === product.id);
 
-  const selectedBike = bikesInCart.find((cartBike) => cartBike.id === bike.id);
-
-  // daca avem mai multe bucati din acelasi produs
-  if (selectedBike.quantity > 1) {
-    // scadem cantitatea pentru produsul respectiv
-    selectedBike.quantity -= 1;
-
-    // facem uppdate la localstorage unde noul nostru cart
-    // a redus cantitatea cu 1 pentru produs nostru
-    localStorage.setItem("cart", JSON.stringify(bikesInCart));
+  if (selectedProduct.quantity > 1) {
+    selectedProduct.quantity -= 1;
+    localStorage.setItem("cart", JSON.stringify(productsInCart));
   } else {
-    // scot din array motocicleta pe care vreau sa o sterg
-    // mi se creaza un nou array cu motocicletele ramase
-    const filteredBikes = bikesInCart.filter((cartBike) => {
-      return cartBike.id !== bike.id;
+    const filteredProducts = productsInCart.filter((cartProduct) => {
+      return cartProduct.id !== product.id;
     });
-
-    // facem update la localstorage cu motocicletele ramase
-    localStorage.setItem("cart", JSON.stringify(filteredBikes));
+    localStorage.setItem("cart", JSON.stringify(filteredProducts));
   }
 
-  // resetam div-urile pentru products si total
-  document.getElementById("products").innerHTML = "";
-  document.getElementById("total").innerHTML = "";
-
-  // reapelam functia de generare a cosului de cumparaturi
-  // pentru noul local storage
   getCheckoutItemsAndTotal();
+  checkoutSummary();
+}
+function addToCart(product) {
+  const productsInCart = JSON.parse(localStorage.getItem("cart"));
+  const selectedProduct = productsInCart.find((cartProduct) => cartProduct.id === product.id);
+
+  if (selectedProduct.quantity) {
+    selectedProduct.quantity += 1;
+    localStorage.setItem("cart", JSON.stringify(productsInCart));
+  } else {
+    const filteredProducts = productsInCart.filter((cartProduct) => {
+      return cartProduct.id !== product.id;
+    });
+    localStorage.setItem("cart", JSON.stringify(filteredProducts));
+  }
+
+  getCheckoutItemsAndTotal();
+  checkoutSummary();
 }
 
 function getCheckoutItemsAndTotal() {
-  const bikes = JSON.parse(localStorage.getItem("cart"));
+  const products = JSON.parse(localStorage.getItem("cart"));
+  const container = document.getElementById("containers");
+  container.innerHTML = "";
+  products.forEach((product) => {
+    const productDiv = document.createElement("div");
+    const productImageDiv = document.createElement("div");
+    const productTextDiv = document.createElement("div");
+    const productButtonsDiv = document.createElement("div");
+    productImageDiv.classList.add("image-container-cart");
+    productTextDiv.classList.add("name-and-price-cart");
+    productButtonsDiv.classList.add("buttons-cart");
 
-  const container = document.getElementById("products");
+    productDiv.classList.add("product-container");
 
-  bikes.forEach((bike) => {
-    const motorBikeDiv = document.createElement("div");
-    motorBikeDiv.classList.add("motor-bike-container");
-
-    // 3. create image tag -> imagine motor;
     const image = document.createElement("img");
-    image.setAttribute("src", bike.image);
-    image.setAttribute("alt", `image of ${bike.model}`);
+    image.setAttribute("src", product.image);
+    image.setAttribute("alt", `image of ${product.model}`);
+    productDiv.appendChild(productImageDiv);
+    productImageDiv.appendChild(image);
+    
 
-    // 4. append image tag
-    motorBikeDiv.appendChild(image);
+    const productName = document.createElement("p");
+    productName.classList.add("product-title");
+    productName.textContent = `${product.model}`;
+    productDiv.appendChild(productTextDiv);
+    productTextDiv.appendChild(productName);
 
-    // 5. create p tag -> nume motor
-    const motorName = document.createElement("p");
-    motorName.textContent = `${bike.model}`;
-
-    // 6. append p tag
-    motorBikeDiv.appendChild(motorName);
-
-    const qty = document.createElement("p");
-    qty.textContent = `${bike.quantity}`;
-
-    motorBikeDiv.appendChild(qty);
-
-    // 7. create p tag -> pret motor
     const price = document.createElement("p");
-    price.classList.add("motor-bike-price-hidden");
-    price.textContent = `${bike.price}`;
+    price.classList.add("product-price-hidden");
+    price.textContent = `${product.price}`;
+    productTextDiv.appendChild(price);
 
-    // 8. append price
-    motorBikeDiv.appendChild(price);
-
-    motorBikeDiv.addEventListener("mouseenter", () => {
-      price.classList.remove("motor-bike-price-hidden");
-      price.classList.add("motor-bike-price-show");
-    });
-
-    motorBikeDiv.addEventListener("mouseleave", () => {
-      price.classList.add("motor-bike-price-hidden");
-      price.classList.remove("motor-bike-price-show");
-    });
-
-    // remove item button
     const removeButton = document.createElement("button");
-    removeButton.textContent = "Delete from cart";
-    removeButton.addEventListener("click", () => removeFromCart(bike));
+    removeButton.textContent = "-";
+    removeButton.addEventListener("click", () => removeFromCart(product));
+    productDiv.appendChild(productButtonsDiv);
+    productButtonsDiv.appendChild(removeButton);
 
-    motorBikeDiv.appendChild(removeButton);
+    const quantity = document.createElement("p");
+    quantity.classList.add("product-quantity");
+    quantity.textContent = `${product.quantity}`;
+    productButtonsDiv.appendChild(quantity);
 
-    // . append motorBikeDiv to the container
-    container.appendChild(motorBikeDiv);
+    const addButton = document.createElement("button");
+    addButton.textContent = "+";
+    addButton.addEventListener("click", () => addToCart(product));
+    productDiv.appendChild(productButtonsDiv);
+    productButtonsDiv.appendChild(addButton);
+
+    container.appendChild(productDiv);
   });
+  updateCartTotalItems();
 
-  const total = bikes.reduce((acc, bike) => {
-    const price = Number(bike.price.split("$")[0]);
-
-    const totalPrice = price * bike.quantity;
+  const total = products.reduce((acc, product) => {
+    const price = Number(product.price.replace("$ ", ""));
+    const totalPrice = price * product.quantity;
     return acc + totalPrice;
   }, 0);
 
-  const totalContainer = document.getElementById("total");
-  totalContainer.textContent = `${total}$`;
+  const totalContainer = document.getElementById("totalPrice");
+  totalContainer.textContent = `${total}`;
 }

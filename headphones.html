@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/styles/headphones.mobile.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
   </head>
-  <body id="body">
+  <body id="body" onload="getCheckoutItemsAndTotal()">
     <section id="modal-background">
       <section id="modal">
         <section class="modal-containers">
@@ -24,8 +24,9 @@
             </h6>
             <a href="#">Remove all</a>
           </section>
+          <section id="containers" id="divs"></section>
           <section class="cart-total">
-            <p class="total-text">TOTAL</p>
+            <p class="total-text" id="total">TOTAL</p>
             <p class="h6 cart-total-price">$ <span id="totalPrice">0</span></p>
           </section>
           <a href="checkout.html" class="link-see-product">
@@ -366,5 +367,9 @@
     </section>
     <script src="/js/menu.js"></script>
     <script src="/js/modal.js"></script>
+    <script src="/js/quantity.js"></script>
+    <script src="/js/checkout.js"></script>
+    <script src="/js/initData.js"></script>
+    <script src="/js/test.js"></script>
   </body>
 </html>

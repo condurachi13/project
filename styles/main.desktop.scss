@@ -93,8 +93,11 @@
       background-image: url(/images/desktop/zx9-desktop.png);
       width: 60%;
       height: 100%;
+      background-position-y: bottom;
+      background-position-x: center;
+      // background-position: center;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 65%;
     }
 
     .zx9-description {

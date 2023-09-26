@@ -14,7 +14,11 @@ function minusQuantity() {
 
     if (isNaN(currentValue)) {
         currentValue = 1;
+    } 
+    
+    if (currentValue > 1) {
+        input.value = currentValue - 1;
+        
     }
     
-    input.value = currentValue - 1;
 }
